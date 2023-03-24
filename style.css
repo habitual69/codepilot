@@ -1,0 +1,127 @@
+/* Navigation */
+.navbar {
+    padding: 0.5rem 1rem;
+    background-color: #dda15e;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+  
+  .nav-link {
+    color: #f8f9fa;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-right: 1rem;
+  }
+  
+  .nav-link:hover {
+    color: #ffc107;
+  }
+  
+  /* About Me Section */
+  #about {
+    background-color: #f8f9fa;
+    padding: 5rem 0;
+  }
+  
+  .img-fluid {
+    border: 0.5rem solid #343a40;
+  }
+  
+  h1 {
+    margin-top: 1.5rem;
+    font-size: 3rem;
+  }
+  
+  p {
+    font-size: 1.5rem;
+  }
+  
+  /* Skills Section */
+  #skills {
+    background-color: #a3b18a;
+    padding: 5rem 0;
+  }
+  
+  h2 {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+  }
+  
+  hr {
+    border-top: 0.2rem solid #588157;
+  }
+  
+  ul {
+    list-style-type: none;
+    font-size: 1.5rem;
+    padding-left: 0;
+  }
+  
+  li {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Experience Section */
+  #experience {
+    background-color: #dad7cd;
+    padding: 5rem 0;
+  }
+  
+  h4 {
+    margin-top: 2rem;
+    font-size: 2rem;
+  }
+  
+  /* Education Section */
+  #education {
+    background-color: #588157;
+    padding: 5rem 0;
+  }
+  
+  h3 {
+    margin-top: 2rem;
+    font-size: 2rem;
+  }
+  
+  /* General styles */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  @media (max-width: 576px) {
+    .navbar-brand {
+      font-size: 1.2rem;
+    }
+  
+    .nav-link {
+      font-size: 1rem;
+    }
+  
+    .img-fluid {
+      border-width: 0.2rem;
+    }
+  
+    h1 {
+      font-size: 2.5rem;
+    }
+  
+    p {
+      font-size: 1.2rem;
+    }
+  
+    h2 {
+      font-size: 2rem;
+    }
+  
+    h4 {
+      font-size: 1.5rem;
+    }
+  
+    h3 {
+      font-size: 1.5rem;
+    }
+  }
+  
