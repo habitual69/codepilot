@@ -125,3 +125,62 @@
     }
   }
   
+/* Bar CSS */
+.bar {
+  display: block;
+  height: 10px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-top: 5px;
+  width: 100%;
+  }
+  
+  .bar-fill {
+  display: block;
+  height: 100%;
+  width: 0;
+  border-radius: 20px;
+  transition: width 1s ease-in-out;
+  }
+  
+  @media (max-width: 767px) {
+  .bar {
+  height: 6px;
+  margin-top: 3px;
+  }
+  }
+  
+  .bar-80 {
+  width: 80%;
+  background-color: #4CAF50;
+  }
+  
+  .bar-60 {
+  width: 60%;
+  background-color: #2196F3;
+  }
+  
+  .bar-40 {
+  width: 40%;
+  background-color: #FFC107;
+  }
+  
+  .bar-50 {
+  width: 50%;
+  background-color: #9C27B0;
+  }
+  
+  .bar-30 {
+  width: 30%;
+  background-color: #795548;
+  }
+  
+  .bar-70 {
+  width: 70%;
+  background-color: #E91E63;
+  }
+  
+  .bar-90 {
+  width: 90%;
+  background-color: #FF5722;
+  }
