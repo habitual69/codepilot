@@ -1,204 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Arbind Singh (Habitual69)</title>
-	
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-	
-	<!-- Font Awesome -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-kBkJc/XiUp5G5KQo7f5wZaizl7vK8lLm9/EXpPWbIlBna/wvG8PnytZzKnjwshJu+ly1vklADNmG2fITxFJvw==" crossorigin="anonymous" />
-	
-	<!-- Custom CSS -->
-	<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="./dist/output.css">
+    <style>
+        .navbar-bg {
+            background-color: #5C5470;
+        }
+        .hero-bg {
+            background-color: #352F44;
+        }
+        .projects-bg {
+            background-color: #B9B4C7;
+        }
+        .footer-bg {
+            background-color: #FAF0E6;
+        }
+        .card-border {
+            border-color: #5C5470;
+        }
+    </style>
 </head>
-<body>
-	
-	<!-- Navigation -->
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-		<a class="navbar-brand" href="#">Arbind Singh (habitual69) Portfolio</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarNav">
-			<ul class="navbar-nav ml-auto">
-				<li class="nav-item active">
-					<a class="nav-link" href="#about">About Me</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#skills">Skills</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#experience">Experience</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#education">Education</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#hobbies">Hobbies</a>
-				</li>
-			</ul>
-		</div>
-	</nav>
+<body class="text-black font-sans">
 
-	<!-- About Me Section -->
-	<section id="about">
-		<div class="container">
-			<div class="row">
-                <div class="col-md-12 text-center">
-                    <img src="https://media.licdn.com/dms/image/D4D03AQG66PX-RIRmSQ/profile-displayphoto-shrink_200_200/0/1674583807923?e=1684972800&v=beta&t=lBRkDMyghrlz4mCf0qJ4bwoxZYDlRrInyi6S9p9idzQ" alt="Profile Picture" class="img-fluid rounded-circle mb-3" width="300">
-                    <h1>Arbind Singh (Habitual69)</h1>
-					<p>MCP, MCTS certified computer science teacher with 8 years of experience in top brand schools like Delhi Public School. Passionate about technology and continuous learning. Skilled in Python, TypeScript, Flask, Docker, and Cloud infrastructure. Bachelor's degree in Computer Application (BCA) and a keen interest in photography.</p>
-				</div>
-			</div>
-		</div>
-	</section>
-	
-	<!-- Skills Section -->
-    <section id="skills">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h2>Skills</h2>
-                    <hr>
-                    <ul>
-                        <li>
-                            <label>Python</label>
-                            <span class="bar" style="background: linear-gradient(90deg, #4CAF50 80%, #ddd 80%);">
-                                <span class="bar-fill bar-80"></span>
-                            </span>
-                        </li>
-                        <li>
-                            <label>SQL</label>
-                            <span class="bar" style="background: linear-gradient(90deg, #2196F3 60%, #ddd 60%);">
-                                <span class="bar-fill bar-60"></span>
-                            </span>
-                        </li>
-                        <li>
-                            <label>App Script</label>
-                            <span class="bar" style="background: linear-gradient(90deg, #FFC107 40%, #ddd 40%);">
-                                <span class="bar-fill bar-40"></span>
-                            </span>
-                        </li>
-                        <li>
-                            <label>C</label>
-                            <span class="bar" style="background: linear-gradient(90deg, #9C27B0 50%, #ddd 50%);">
-                                <span class="bar-fill bar-50"></span>
-                            </span>
-                        </li>
-                        <li>
-                            <label>C#</label>
-                            <span class="bar" style="background: linear-gradient(90deg, #795548 30%, #ddd 30%);">
-                                <span class="bar-fill bar-30"></span>
-                            </span>
-                        </li>                
-                        <li>
-                            <label>C++</label>
-                            <span class="bar" style="background: linear-gradient(90deg, #E91E63 70%, #ddd 70%);">
-                                <span class="bar-fill bar-70"></span>
-                            </span>
-                        </li>
-                        <li>
-                            <label>HTML</label>
-                            <span class="bar" style="background: linear-gradient(90deg, #FF5722 90%, #ddd 90%);">
-                                <span class="bar-fill bar-90"></span>
-                            </span>
-                        </li>
-                        <li>
-                            <label>Docker</label>
-                            <span class="bar" style="background: linear-gradient(90deg, #2196F3 50%, #ddd 50%);">
-                                <span class="bar-fill bar-50"></span>
-                            </span>
-                        </li>
-                        <li>
-                            <label>Cloud Infrastructure</label>
-                            <span class="bar" style="background: linear-gradient(90deg, #4CAF50 40%, #ddd 40%);">
-                                <span class="bar-fill bar-40"></span>
-                            </span>
-                        </li>
-                        <li>
-                            <label>Linux Command Line Server</label>
-                            <span class="bar" style="background: linear-gradient(90deg, #9C27B0 60%, #ddd 60%);">
-                                <span class="bar-fill bar-60"></span>
-                            </span>
-                        </li>
-                        <li>
-                            <label>Windows Server Active Directory</label>
-                            <span class="bar" style="background: linear-gradient(90deg, #795548 30%, #ddd 30%);">
-                                <span class="bar-fill bar-30"></span>
-                            </span>
-                        </li>
-                    </ul>
-                </div>
+ <!-- Navbar -->
+<nav class="navbar-bg text-white">
+    <div class="container mx-auto flex items-center justify-between p-4">
+        <h1 class="text-2xl font-bold">My Portfolio</h1>
+        <div class="flex items-center space-x-4">
+            <a href="#about-me" class="hover:text-white hover:bg-[#B9B4C7] px-4 py-2 rounded-xl">About Me</a>
+            <a href="#skills" class="hover:text-white hover:bg-[#B9B4C7] px-4 py-2 rounded-xl">Skills</a>
+            <a href="#projects" class="hover:text-white hover:bg-[#B9B4C7] px-4 py-2 rounded-xl">Projects</a>
+            <a href="#contact" class="hover:text-white hover:bg-[#B9B4C7] px-4 py-2 rounded-xl">Contact</a>
+        </div>
+    </div>
+</nav>
+<!-- Hero Section -->
+<section id="about-me" class="hero-bg py-20 text-white">
+    <div class="container mx-auto flex flex-col md:flex-row items-center">
+        <div class="w-full md:w-1/2 text-center mb-8 md:mb-0">
+            <img src="https://s3.tebi.io/quick/IMG_20221118_192903.jpg" alt="Arbind Singh" class="rounded-xl w-64 inline-block">
+        </div>
+        <div class="w-full md:w-1/2 px-5">
+            <h1 class="text-5xl font-bold mb-4">Hello , I'm Arbind Singh</h1>
+            <p>MCP, MCTS certified computer science teacher with 8 years of experience in top brand schools like Delhi Public School. Passionate about technology and continuous learning. Skilled in Python, TypeScript, Flask, Docker, and Cloud infrastructure. Bachelor's degree in Computer Application (BCA) and a keen interest in photography.</p>
+            <div class="mt-8">
+                <a href="#" class="border-2 border-white py-2 px-6 rounded-xl hover:bg-white hover:text-black">Hire Me</a>
+                <a href="#projects" class="border-2 border-white py-2 px-6 rounded-xl hover:bg-white hover:text-black">My Projects</a>
             </div>
         </div>
-    </section>
-<!-- Experience Section -->
-    <section id="experience">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h2>Experience</h2>
-                    <hr>
-                    <h4>Delhi Public School</h4>
-                    <p>Computer Science Teacher (2015 - 2023)</p>
-                    <p>Microsoft Certified Professional</p>
-                </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="bg-[#5C5470] py-20 text-white cursor-pointer">
+    <div class="container mx-auto">
+        <h2 class="text-4xl font-bold mb-10 text-center">Skills</h2>
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-6">
+            <div class="bg-[#B9B4C7] text-black text-center rounded-lg py-6 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">
+                <span class="text-lg font-semibold animate-bounce">Python</span>
+            </div>
+            <div class="bg-[#B9B4C7] text-black text-center rounded-lg py-6 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">
+                <span class="text-lg font-semibold animate-bounce">TailwindCSS</span>
+            </div>
+            <div class="bg-[#B9B4C7] text-black text-center rounded-lg py-6 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">
+                <span class="text-lg font-semibold animate-bounce">HTML</span>
+            </div>
+            <div class="bg-[#B9B4C7] text-black text-center rounded-lg py-6 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">
+                <span class="text-lg font-semibold animate-bounce">JavaScript</span>
+            </div>
+            <div class="bg-[#B9B4C7] text-black text-center rounded-lg py-6 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">
+                <span class="text-lg font-semibold animate-bounce">App Script</span>
+            </div>
+            <div class="bg-[#B9B4C7] text-black text-center rounded-lg py-6 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">
+                <span class="text-lg font-semibold animate-bounce">Docker</span>
+            </div>
+            <div class="bg-[#B9B4C7] text-black text-center rounded-lg py-6 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">
+                <span class="text-lg font-semibold animate-bounce">Linux</span>
             </div>
         </div>
-    </section>
-    
-    <!-- Education Section -->
-    <section id="education">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h2>Education</h2>
-                    <hr>
-                    <h4>Bachelor's Degree in Computer Application (BCA)</h4>
-                    <p>Punjab technical University, India</p>
-                    <p>Year of Completion: 2012</p>
+    </div>
+</section>
+<!-- Projects Section -->
+<section id="projects" class="bg-[#B9B4C7] text-white py-20">
+    <div class="container mx-auto">
+        <h2 class="text-4xl font-bold mb-10 text-center">Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 justify-center">
+            
+            <!-- Project 1 -->
+            <div class="max-w-sm bg-[#FAF0E6] border border-[#5C5470] rounded-lg shadow dark:bg-[#352F44] mx-auto">
+                <a href="#">
+                    <img class="rounded-t-lg w-full" src="https://raw.githubusercontent.com/habitual69/youradio/main/assets/tunewave.png" alt="TuneWave Project Image" />
+                </a>
+                <div class="p-5">
+                    <a href="#">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-white dark:text-white">TuneWave</h5>
+                    </a>
+                    <p class="mb-3 font-normal text-[#5C5470] dark:text-gray-400">A fun and educational project aimed at helping users learn coding skills by creating an online music streaming platform.</p>
+                    <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#5C5470] rounded-lg hover:bg-[#B9B4C7] focus:ring-4 focus:outline-none focus:ring-[#5C5470] dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 ">
+                        Read more
+                    </a>
                 </div>
             </div>
-        </div>
-    </section>
-    
-    <!-- Hobbies Section -->
-    <section id="hobbies">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h2>Hobbies</h2>
-                    <hr>
-                    <ul>
-                        <li>Photography</li>
-                        <li>Reading</li>
-                        <li>Traveling</li>
-                        <li>Hiking</li>
-                    </ul>
+
+            <!-- Project 2 -->
+            <div class="max-w-sm bg-[#FAF0E6] border border-[#5C5470] rounded-lg shadow dark:bg-[#352F44] mx-auto">
+                <a href="#">
+                    <img class="rounded-t-lg" src="https://s3.tebi.io/quick/chrome_2fZ548X2JK.png" alt="Online Digital Music Project Image" />
+                </a>
+                <div class="p-5">
+                    <a href="#">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-white dark:text-white">Online Digital Music</h5>
+                    </a>
+                    <p class="mb-3 font-normal text-[#5C5470] dark:text-gray-400">A web application that allows users to listen to digital music tracks and manage their playlists online.</p>
+                    <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#5C5470] rounded-lg hover:bg-[#B9B4C7] focus:ring-4 focus:outline-none focus:ring-[#5C5470] dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                        Read more
+                    </a>
                 </div>
             </div>
-        </div>
-    </section>
-    
-    <!-- Footer Section -->
-    <footer class="bg-dark text-white mt-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <p class="text-center">Arbind Singh habitual69 Portfolio &copy; 2023</p>
+
+            <!-- Project 3 -->
+            <div class="max-w-sm bg-[#FAF0E6] border border-[#5C5470] rounded-lg shadow dark:bg-[#352F44] mx-auto">
+                <a href="#">
+                    <img class="rounded-t-lg w-full" src="https://s3.tebi.io/quick/WindowsTerminal_crVsdhkC5n.png" alt="Image Resizer Tool Project Image" />
+                </a>
+                <div class="p-5">
+                    <a href="#">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-white dark:text-white">Image Resizer Tool</h5>
+                    </a>
+                    <p class="mb-3 font-normal text-[#5C5470] dark:text-gray-400">A command-line utility that allows users to convert and compress images.</p>
+                    <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#5C5470] rounded-lg hover:bg-[#B9B4C7] focus:ring-4 focus:outline-none focus:ring-[#5C5470] dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                        Read more
+                    </a>
                 </div>
             </div>
+
         </div>
-    </footer>
-    
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"></script>
-    
+    </div>
+</section>
+
+<!-- Contact Form Section -->
+<section id="contact" class="bg-[#352F44] py-20 text-white">
+    <div class="container mx-auto">
+        <h2 class="text-4xl font-bold mb-10 text-center">Contact Me</h2>
+        <form class="w-full max-w-lg mx-auto">
+            <div class="mb-6">
+                <label class="block text-white text-lg font-bold mb-2" for="name">Name</label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-black" id="name" type="text" placeholder="Your name">
+            </div>
+            <div class="mb-6">
+                <label class="block text-white text-lg font-bold mb-2" for="email">Email</label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-black" id="email" type="email" placeholder="Your email">
+            </div>
+            <div class="mb-6">
+                <label class="block text-white text-lg font-bold mb-2" for="message">Message</label>
+                <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-black h-32" id="message" placeholder="Your message"></textarea>
+            </div>
+            <div class="flex items-center justify-between">
+                <button class="bg-[#B9B4C7] hover:bg-[#FAF0E6] text-black font-bold py-2 px-4 rounded" type="submit">
+                    Send
+                </button>
+            </div>
+        </form>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-[#FAF0E6] text-black text-center p-8">
+    <p>Copyright &copy; 2023 Your Name. All rights reserved.</p>
+</footer>
+
 </body>
 </html>
