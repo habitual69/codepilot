@@ -1,175 +1,276 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Portfolio</title>
-    <link rel="stylesheet" href="./dist/output.css">
+    <title>Dynamic Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-thin.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-solid.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-regular.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-light.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&family=Josefin+Sans:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
     <style>
-        .navbar-bg {
-            background-color: #5C5470;
+        body {
+            font-family: 'Roboto', sans-serif;
         }
-        .hero-bg {
-            background-color: #352F44;
+        .custom-shadow {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
         }
-        .projects-bg {
-            background-color: #B9B4C7;
+        .custom-gradient {
+            background: linear-gradient(90deg, rgba(104, 109, 224, 1) 0%, rgba(72, 74, 236, 1) 100%);
         }
-        .footer-bg {
-            background-color: #FAF0E6;
+        #intro {
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 700;
         }
-        .card-border {
-            border-color: #5C5470;
+        #header a {
+            font-family: 'Josefin Sans', sans-serif;
+            font-weight: 700;
+        }
+        #websitename {
+            font-family: 'Lilita One', cursive;
         }
     </style>
 </head>
-<body class="text-black font-sans">
+<body class="bg-slate-100">
 
- <!-- Navbar -->
-<nav class="navbar-bg text-white">
-    <div class="container mx-auto flex items-center justify-between p-4">
-        <h1 class="text-2xl font-bold">My Portfolio</h1>
-        <div class="flex items-center space-x-4">
-            <a href="#about-me" class="hover:text-white hover:bg-[#B9B4C7] px-4 py-2 rounded-xl">About Me</a>
-            <a href="#skills" class="hover:text-white hover:bg-[#B9B4C7] px-4 py-2 rounded-xl">Skills</a>
-            <a href="#projects" class="hover:text-white hover:bg-[#B9B4C7] px-4 py-2 rounded-xl">Projects</a>
-            <a href="#contact" class="hover:text-white hover:bg-[#B9B4C7] px-4 py-2 rounded-xl">Contact</a>
+<!-- Navbar -->
+<nav class="bg-white px-6 py-4 shadow">
+    <div class="container mx-auto flex justify-between items-center">
+        <a href="#" class="text-xl font-bold text-gray-900" id="websitename">Creative Catalog</a>
+        <div id="header">
+            <a href="#about" class="text-gray-800 hover:text-purple-600 px-4">About</a>
+            <a href="#skills" class="text-gray-800 hover:text-purple-600 px-4">Skills</a>
+            <a href="#projects" class="text-gray-800 hover:text-purple-600 px-4">Projects</a>
+            <a href="#contact" class="text-gray-800 hover:text-purple-600 px-4">Contact</a>
         </div>
     </div>
 </nav>
+
 <!-- Hero Section -->
-<section id="about-me" class="hero-bg py-20 text-white">
-    <div class="container mx-auto flex flex-col md:flex-row items-center">
-        <div class="w-full md:w-1/2 text-center mb-8 md:mb-0">
-            <img src="https://s3.tebi.io/quick/IMG_20221118_192903.jpg" alt="Arbind Singh" class="rounded-xl w-64 inline-block">
-        </div>
-        <div class="w-full md:w-1/2 px-5">
-            <h1 class="text-5xl font-bold mb-4">Hello , I'm Arbind Singh</h1>
-            <p>MCP, MCTS certified computer science teacher with 8 years of experience in top brand schools like Delhi Public School. Passionate about technology and continuous learning. Skilled in Python, TypeScript, Flask, Docker, and Cloud infrastructure. Bachelor's degree in Computer Application (BCA) and a keen interest in photography.</p>
-            <div class="mt-8">
-                <a href="#" class="border-2 border-white py-2 px-6 rounded-xl hover:bg-white hover:text-black">Hire Me</a>
-                <a href="#projects" class="border-2 border-white py-2 px-6 rounded-xl hover:bg-white hover:text-black">My Projects</a>
-            </div>
-        </div>
+<section class="text-gray-700 body-font">
+  <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+      <img class="object-cover object-center rounded" alt="hero" src="https://s3.tebi.io/mynotes/ME.png">
     </div>
+    <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Hello, I'm Arbind Singh</h1>
+      <p class="mb-8 leading-relaxed" id="intro">Passionate about teaching and empowering the next generation of technologists. Experienced in Python, TypeScript, Flask, Docker, and Cloud Infrastructure.</p>
+      <div class="flex justify-center">
+        <a href="#contact" class="inline-flex text-white bg-purple-500 border-0 py-2 px-6 focus:outline-none hover:bg-purple-600 rounded text-lg">Contact Me</a>
+        <a href="#projects" class="ml-4 inline-flex text-gray-700 bg-gray-200 border-0 py-2 px-6 focus:outline-none hover:bg-gray-300 rounded text-lg">See My Projects</a>
+      </div>
+    </div>
+  </div>
 </section>
 
 <!-- Skills Section -->
-<section id="skills" class="bg-[#5C5470] py-20 text-white cursor-pointer">
-    <div class="container mx-auto">
-        <h2 class="text-4xl font-bold mb-10 text-center">Skills</h2>
-        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-6">
-            <div class="bg-[#B9B4C7] text-black text-center rounded-lg py-6 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">
-                <span class="text-lg font-semibold animate-bounce">Python</span>
-            </div>
-            <div class="bg-[#B9B4C7] text-black text-center rounded-lg py-6 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">
-                <span class="text-lg font-semibold animate-bounce">TailwindCSS</span>
-            </div>
-            <div class="bg-[#B9B4C7] text-black text-center rounded-lg py-6 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">
-                <span class="text-lg font-semibold animate-bounce">HTML</span>
-            </div>
-            <div class="bg-[#B9B4C7] text-black text-center rounded-lg py-6 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">
-                <span class="text-lg font-semibold animate-bounce">JavaScript</span>
-            </div>
-            <div class="bg-[#B9B4C7] text-black text-center rounded-lg py-6 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">
-                <span class="text-lg font-semibold animate-bounce">App Script</span>
-            </div>
-            <div class="bg-[#B9B4C7] text-black text-center rounded-lg py-6 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">
-                <span class="text-lg font-semibold animate-bounce">Docker</span>
-            </div>
-            <div class="bg-[#B9B4C7] text-black text-center rounded-lg py-6 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">
-                <span class="text-lg font-semibold animate-bounce">Linux</span>
-            </div>
-        </div>
+<section id="skills" class="text-gray-700 body-font bg-white">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="text-center mb-20">
+      <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">Skills & Technologies</h1>
+      <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">My technical skill set.</p>
     </div>
+    <div class="flex flex-wrap -m-4">
+      <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+        <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+          <i class="fas fa-laptop-code text-purple-500 text-3xl mb-3"></i>
+          <h2 class="title-font font-medium text-2xl text-gray-900">Web Dev</h2>
+          <p class="leading-relaxed">HTML, CSS, JavaScript, ReactJs Tailwindcss</p>
+        </div>
+      </div>
+      <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+        <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+          <i class="fa-sharp fa-solid fa-code text-purple-500 text-3xl mb-3"></i>
+          <h2 class="title-font font-medium text-2xl text-gray-900">Coding</h2>
+          <p class="leading-relaxed">Python, C, C++ and More to learn</p>
+        </div>
+      </div>
+      <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+        <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+          <i class="fa-regular fa-layer-group text-purple-500 text-3xl mb-3"></i>
+          <h2 class="title-font font-medium text-2xl text-gray-900">DevOps</h2>
+          <p class="leading-relaxed">Docker , Kubernetes, AWS, Azure, GCP</p>   
+        </div>
+      </div>
+      <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+        <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+          <i class="fa-sharp fa-regular fa-gear text-purple-500 text-3xl mb-3"></i>
+          <h2 class="title-font font-medium text-2xl text-gray-900">Sys Admin</h2>
+          <p class="leading-relaxed">Windows, Linux, OSx, Unix, Android</p>
+        </div>
+      </div>
+      <!-- More skills -->
+    </div>
+  </div>
 </section>
+
 <!-- Projects Section -->
-<section id="projects" class="bg-[#B9B4C7] text-white py-20">
-    <div class="container mx-auto">
-        <h2 class="text-4xl font-bold mb-10 text-center">Projects</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 justify-center">
-            
-            <!-- Project 1 -->
-            <div class="max-w-sm bg-[#FAF0E6] border border-[#5C5470] rounded-lg shadow dark:bg-[#352F44] mx-auto">
-                <a href="#">
-                    <img class="rounded-t-lg w-full" src="https://raw.githubusercontent.com/habitual69/youradio/main/assets/tunewave.png" alt="TuneWave Project Image" />
-                </a>
-                <div class="p-5">
-                    <a href="#">
-                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-white dark:text-white">TuneWave</h5>
-                    </a>
-                    <p class="mb-3 font-normal text-[#5C5470] dark:text-gray-400">A fun and educational project aimed at helping users learn coding skills by creating an online music streaming platform.</p>
-                    <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#5C5470] rounded-lg hover:bg-[#B9B4C7] focus:ring-4 focus:outline-none focus:ring-[#5C5470] dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 ">
-                        Read more
-                    </a>
-                </div>
-            </div>
-
-            <!-- Project 2 -->
-            <div class="max-w-sm bg-[#FAF0E6] border border-[#5C5470] rounded-lg shadow dark:bg-[#352F44] mx-auto">
-                <a href="#">
-                    <img class="rounded-t-lg" src="https://s3.tebi.io/quick/chrome_2fZ548X2JK.png" alt="Online Digital Music Project Image" />
-                </a>
-                <div class="p-5">
-                    <a href="#">
-                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-white dark:text-white">Online Digital Music</h5>
-                    </a>
-                    <p class="mb-3 font-normal text-[#5C5470] dark:text-gray-400">A web application that allows users to listen to digital music tracks and manage their playlists online.</p>
-                    <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#5C5470] rounded-lg hover:bg-[#B9B4C7] focus:ring-4 focus:outline-none focus:ring-[#5C5470] dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                        Read more
-                    </a>
-                </div>
-            </div>
-
-            <!-- Project 3 -->
-            <div class="max-w-sm bg-[#FAF0E6] border border-[#5C5470] rounded-lg shadow dark:bg-[#352F44] mx-auto">
-                <a href="#">
-                    <img class="rounded-t-lg w-full" src="https://s3.tebi.io/quick/WindowsTerminal_crVsdhkC5n.png" alt="Image Resizer Tool Project Image" />
-                </a>
-                <div class="p-5">
-                    <a href="#">
-                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-white dark:text-white">Image Resizer Tool</h5>
-                    </a>
-                    <p class="mb-3 font-normal text-[#5C5470] dark:text-gray-400">A command-line utility that allows users to convert and compress images.</p>
-                    <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#5C5470] rounded-lg hover:bg-[#B9B4C7] focus:ring-4 focus:outline-none focus:ring-[#5C5470] dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                        Read more
-                    </a>
-                </div>
-            </div>
-
+<section id="projects" class="text-gray-700 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-wrap w-full mb-20">
+        <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+          <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Projects</h1>
+          <div class="h-1 w-20 bg-purple-500 rounded"></div>
         </div>
+        <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">Check out some of my projects.</p>
+      </div>
+      <div class="flex flex-wrap -m-4">
+        <!-- Project 1 -->
+        <div class="p-4 md:w-1/2">
+          <div class="max-w-md mx-auto bg-white rounded-lg overflow-hidden md:max-w-xl shadow-lg">
+              <div class="md:flex">
+                  <div class="md:flex-shrink-0">
+                      <img src="https://github.com/habitual69/mealbuddy/blob/main/screenshots/mealbuddy.png?raw=true" alt="Meal Buddy" class="h-48 w-full object-cover md:h-full md:w-48">
+                  </div>
+                  <div class="p-4">
+                      <div class="flex items-center mb-3">
+                          <div class="flex-shrink-0 w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-purple-500 text-white">
+                              <i class="fas fa-utensils"></i>
+                          </div>
+                          <h2 class="text-lg font-medium text-gray-900 title-font">MealBuddy</h2>
+                      </div>
+                      <p class="leading-relaxed text-base text-gray-600">MealBuddy is a comprehensive platform designed to help users discover new meals, delve into detailed recipes, and explore a culinary world like never before.</p>
+                      <a href="https://github.com/habitual69/mealbuddy" class="inline-flex items-center mt-3 text-purple-500 hover:text-purple-600">
+                          Learn More
+                          <i class="fas fa-arrow-right ml-2"></i>
+                      </a>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <!-- Project 2 -->
+        <div class="p-4 md:w-1/2">
+          <div class="max-w-md mx-auto bg-white rounded-lg overflow-hidden md:max-w-xl shadow-lg">
+              <div class="md:flex">
+                  <div class="md:flex-shrink-0">
+                      <img src="https://raw.githubusercontent.com/habitual69/onlinedigitalmusic/main/odm.png" alt="ODM" class="h-48 w-full object-cover md:h-full md:w-48">
+                  </div>
+                  <div class="p-4">
+                      <div class="flex items-center mb-3">
+                          <div class="flex-shrink-0 w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-purple-500 text-white">
+                            <i class="fa-sharp fa-solid fa-music"></i>
+                          </div>
+                          <h2 class="text-lg font-medium text-gray-900 title-font">OnlineDigitalMusic (ODM)</h2>
+                      </div>
+                      <p class="leading-relaxed text-base text-gray-600">OnlineDigitalMusic: A web app for music lovers. Powered by the unofficial DiFm API, it offers diverse tunes to suit every taste.</p>
+                      <a href="https://github.com/habitual69/onlinedigitalmusic" class="inline-flex items-center mt-3 text-purple-500 hover:text-purple-600">
+                          Learn More
+                          <i class="fas fa-arrow-right ml-2"></i>
+                      </a>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <!-- Project 3 -->
+        <div class="p-4 md:w-1/2">
+            <div class="max-w-md mx-auto bg-white rounded-lg overflow-hidden md:max-w-xl shadow-lg">
+                <div class="md:flex">
+                    <div class="md:flex-shrink-0">
+                        <img src="https://github.com/habitual69/youradio/blob/main/assets/tunewave.png?raw=true" alt="Project 2 Screenshot" class="h-48 w-full object-cover md:h-full md:w-48">
+                    </div>
+                    <div class="p-4">
+                        <div class="flex items-center mb-3">
+                            <div class="flex-shrink-0 w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-purple-500 text-white">
+                                <i class="fa-solid fa-radio-tuner"></i>
+                            </div>
+                            <h2 class="text-lg font-medium text-gray-900 title-font">TuneWave - Online Music Streaming</h2>
+                        </div>
+                        <p class="leading-relaxed text-base text-gray-600">uneWave: Learn web development, API integration, and music streaming in one interactive platform. Perfect for beginners and skill improvement alike.</p>
+                        <a href="https://github.com/habitual69/youradio" class="inline-flex items-center mt-3 text-purple-500 hover:text-purple-600">
+                            Learn More
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+          </div>
+        <!-- Project 4 -->
+        <div class="p-4 md:w-1/2">
+            <div class="max-w-md mx-auto bg-white rounded-lg overflow-hidden md:max-w-xl shadow-lg">
+                <div class="md:flex">
+                    <div class="md:flex-shrink-0">
+                        <img src="https://www.redditinc.com/assets/images/blog/_1000x483_crop_center-center_none/reddit_header_2023-11-28-222257_hthh.png" alt="ODM" class="h-48 w-full object-cover md:h-full md:w-48">
+                    </div>
+                    <div class="p-4">
+                        <div class="flex items-center mb-3">
+                            <div class="flex-shrink-0 w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-purple-500 text-white">
+                                <i class="fa-brands fa-reddit-alien"></i>
+                            </div>
+                            <h2 class="text-lg font-medium text-gray-900 title-font">Reddit Post Explorer</h2>
+                        </div>
+                        <p class="leading-relaxed text-base text-gray-600">The Reddit Post Explorer: A Python and Streamlit web app for effortlessly browsing and exploring posts from various subreddits. Fetching data from the Reddit API, it offers a user-friendly interface.</p>
+                        <a href="https://github.com/habitual69/reddit-post-explorer" class="inline-flex items-center mt-3 text-purple-500 hover:text-purple-600">
+                            Learn More
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+          </div>
+      </div>
     </div>
-</section>
+  </section>
+  
 
-<!-- Contact Form Section -->
-<section id="contact" class="bg-[#352F44] py-20 text-white">
-    <div class="container mx-auto">
-        <h2 class="text-4xl font-bold mb-10 text-center">Contact Me</h2>
-        <form class="w-full max-w-lg mx-auto">
-            <div class="mb-6">
-                <label class="block text-white text-lg font-bold mb-2" for="name">Name</label>
-                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-black" id="name" type="text" placeholder="Your name">
-            </div>
-            <div class="mb-6">
-                <label class="block text-white text-lg font-bold mb-2" for="email">Email</label>
-                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-black" id="email" type="email" placeholder="Your email">
-            </div>
-            <div class="mb-6">
-                <label class="block text-white text-lg font-bold mb-2" for="message">Message</label>
-                <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-black h-32" id="message" placeholder="Your message"></textarea>
-            </div>
-            <div class="flex items-center justify-between">
-                <button class="bg-[#B9B4C7] hover:bg-[#FAF0E6] text-black font-bold py-2 px-4 rounded" type="submit">
-                    Send
-                </button>
-            </div>
-        </form>
+<!-- Contact Section -->
+<section id="contact" class="text-gray-700 body-font relative">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-col text-center w-full mb-12">
+      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Contact Me</h1>
+      <p class="
+
+lg:w-2/3 mx-auto leading-relaxed text-base">Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
     </div>
+    <div class="lg:w-1/2 md:w-2/3 mx-auto">
+      <form action="https://formspree.io/f/xjvnyjpj" method="POST" class="flex flex-wrap -m-2">
+        <div class="p-2 w-1/2">
+          <input class="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none focus:border-purple-500 text-base px-4 py-2" placeholder="Name" type="text" name="name">
+        </div>
+        <div class="p-2 w-1/2">
+          <input class="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none focus:border-purple-500 text-base px-4 py-2" placeholder="Email" type="email" name="email">
+        </div>
+        <div class="p-2 w-full">
+          <textarea class="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none h-48 focus:border-purple-500 text-base px-4 py-2 resize-none block" placeholder="Message" name="message"></textarea>
+        </div>
+        <div class="p-2 w-full">
+          <button class="flex mx-auto text-white bg-purple-500 border-0 py-2 px-8 focus:outline-none hover:bg-purple-600 rounded text-lg">Send</button>
+        </div>
+      </form>
+    </div>
+  </div>
 </section>
 
 <!-- Footer -->
-<footer class="bg-[#FAF0E6] text-black text-center p-8">
-    <p>Copyright &copy; 2023 Your Name. All rights reserved.</p>
+<footer class="text-gray-600 body-font">
+  <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+    <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+      <span class="ml-3 text-xl" id="websitename">Creative Catalog</span>
+    </a>
+    <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2023 Arbind Singh —
+      <a href="https://twitter.com/" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">@arbindsingh</a>
+    </p>
+    <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+      <a class="text-gray-500" href="#">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a class="ml-3 text-gray-500" href="#">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a class="ml-3 text-gray-500" href="#">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a class="ml-3 text-gray-500" href="#">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </span>
+  </div>
 </footer>
 
 </body>
